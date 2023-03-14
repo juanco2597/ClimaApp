@@ -7,14 +7,14 @@ const Formulario = () => {
     const { busqueda, datosBusqueda, consultarClima } = useClima()
     const { ciudad, pais } = busqueda
 
-    const handleSubmit = e => {
-        e.preventDefault()
+    const handleSubmit = (even) => {
+        even.preventDefault()
 
         if (Object.values(busqueda).includes('')) {
             setAlerta('Todos los campos son obligatorios')
             return
         }
-
+        setAlerta('')
         consultarClima(busqueda)
     }
 
