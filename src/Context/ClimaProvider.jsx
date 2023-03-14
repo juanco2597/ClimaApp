@@ -10,7 +10,7 @@ const ClimaProvider = ({ children }) => {
     })
     const [resultado, setResultado] = useState({})
     const [cargando, setCargando] = useState(false)
-    const [noResultado, setNoResultado] = useState(true)
+    const [noResultado, setNoResultado] = useState(false)
 
     const datosBusqueda = e => {
         setBusqueda({

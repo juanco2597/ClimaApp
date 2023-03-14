@@ -13,7 +13,8 @@ const AppClima = () => {
                 <Formulario />
 
                 {cargando ? <Loading /> :
-                    resultado?.name ? <Resultado /> : noResultado ? <p>{noResultado}</p> : <p>El clima se va a mostrar aqui</p>}
+                    resultado?.name ? <Resultado />
+                        : noResultado ? <p>{noResultado}</p> : <p>El clima se va a mostrar aqui</p>}
 
             </main>
         </>
